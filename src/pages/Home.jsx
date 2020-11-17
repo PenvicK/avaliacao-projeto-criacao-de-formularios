@@ -1,28 +1,31 @@
 import React from 'react';
+import LandingForm from '../components/LandingForm/LandingForm';
 import './styles/home.css';
+import Img1 from '../public/novidade.png';
+import Img2 from '../public/img2.jpeg';
+import Prosseguir from '../components/prosseguir/Prosseguir';
 
 
 function Home(){
     return(
-        <div className="box-texto">
-            <div className="container-texto-topo">
-                <h1 className="titulo-home">
-                    VIAGE SEM SAIR DE CASA!!
-                </h1>
-                <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum distinctio, delectus at laborum sed, 
-                    autem dolore sunt soluta nostrum quia adipisci fugit dolorem dignissimos. Exercitationem voluptas necessitatibus 
-                    eius eum dicta natus? Deleniti ex harum dolore nulla minus adipisci cumque perspiciatis expedita eveniet fuga 
-                    necessitatibus assumenda id quae.
-                </p>
-                <p>
-                    Pacere sapiente doloremque similique dolores vero saepe consectetur in quos eaque veritatis tempora! Nostrum, 
-                fugiat cum facilis at officia totam illo ut, hic facere placeat assumenda omnis libero quaerat nihil reiciendis nam 
-                cumque, suscipit velit repellendus dolore maiores laudantium ipsum? Distinctio voluptas deserunt quidem dolores hic maiores, 
-                quibusdam rem. Laudantium, suscipit non.
-                </p>
-            </div>
-        </div>
+        <>
+            <Prosseguir />
+            <section id='section-img1'>
+                <div className='section-img1'>
+                    <h2>Novidades</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint et ea, quo iusto laudantium ipsam. Nobis vero iste dolorum alias iure quae reprehenderit, tenetur nam ipsa veniam perferendis voluptas voluptatibus nisi, quam consequatur, soluta corporis. Suscipit aut iusto fugit earum dolore facilis rerum sunt?</p>
+                </div>
+                <img src={Img1} alt="Novidade" id='img1'/>
+            </section>
+            <section id='section-img2'>
+                <div className='section-img2'>
+                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti culpa porro quisquam, quasi modi accusantium consequatur impedit eaque dolor nulla libero earum autem ipsa natus iusto. Minima voluptatum voluptate dolorum voluptates fugit, molestiae distinctio pariatur officia ullam error sunt dicta, delectus placeat perspiciatis perferendis.</p>
+                </div>
+                <img src={Img2} alt="Lorem" id='img2'/>
+            </section>
+            <Prosseguir />
+        </>
     );
 }
 export default Home;
